@@ -12,15 +12,15 @@ class Apush_outPawn : public APawn
 	GENERATED_BODY()
 
 	/* The mesh component */
-	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* ShipMeshComponent;
 
 	/** The camera */
-	UPROPERTY(Category = Camera, VisibleAnywhere, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = Camera, VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* CameraComponent;
 
 	/** Camera boom positioning the camera above the character */
-	UPROPERTY(Category = Camera, VisibleAnywhere, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = Camera, VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraBoom;
 
 public:
