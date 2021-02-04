@@ -16,11 +16,11 @@ class Apush_outPawn : public APawn
 	class UStaticMeshComponent* ShipMeshComponent;
 
 	/** The camera */
-	UPROPERTY(Category = Camera, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = Camera, VisibleAnywhere, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* CameraComponent;
 
 	/** Camera boom positioning the camera above the character */
-	UPROPERTY(Category = Camera, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = Camera, VisibleAnywhere, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraBoom;
 
 public:
